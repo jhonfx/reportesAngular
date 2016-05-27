@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app='app' ng-controller="ReportController">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="10">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="img/sumitel.jpeg" class="img-responsive sumitel" alt="">
+      </div>
+      <div class="col-md-7 title">
+        <p class="text_header">CONSTRUCTORA, COMERCIALIZADORA Y ADMINISTRADORA LOGISTICA</p>
+      </div>
+      <div class="col-md-2">
+        <img src="img/telcel.jpg" class="img-responsive telcel" alt="">
+      </div>
+      <div class="col-md-12">
+        <p>GRUPO SUMITEL S.A DE C.V 23 SEPTIEMBRE 514 COL.MORELOS CP 50120 TOLUCA, MÉX, RFCGSA070416-415 TEL(01722) 277 85 49 E-mail: sumittelcel@</p>
+      </div>
+      <div class="col-md-10" ng-controller="datCtrl">
+        <div class="panel panel-default">
+          <div class="panel-heading" >Toluca, Méx a: {{ today | date : "fullDate" }} </div>
+          <div class="panel-body">
+            Panel content
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-default btn-sm active orden">ORDEN DE COMPRA</button>
+        <p class="numFact">22367</p>
+      </div>
+    </div>
+  </div>
+</body>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/controller.js"></script>
+</html>
